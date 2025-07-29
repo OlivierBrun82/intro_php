@@ -51,18 +51,21 @@
     ];
 
     foreach ($personnages as $personnage) {
-?> 
+?>  
     <article class="Personnages">
         <h3> Nom: <?= $personnage["name"]?></h3>
         <img src="<?= $personnage["imgSrc"]?>" alt="<?= $personnage["ImgAlt"] ?>" ?>
         <p> 
-            Age: <?= $personnage["age"] ?>
-   
-            birth: <?= $personnage["birth"] ?>
-    
-            height : <?= $personnage["height"] ?>
-      
-            weight : <?= $personnage["weight"] ?>
+            <strong>Age:</strong> <?= $personnage["age"] ?>
+        </p>
+        <p>
+            <strong>Birth:</strong> <?= $personnage["birth"] ?>
+        </p>
+        <p>
+            <strong>Height:</strong> <?= $personnage["height"] ?>
+        </p>
+        <p>
+            <strong>Weight:</strong> <?= $personnage["weight"] ?>
         </p>
     </article>
 <?php
